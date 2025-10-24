@@ -1,0 +1,207 @@
+﻿
+@{
+    ViewBag.Title = "GraphSalary";
+    Layout = "~/Views/Shared/_LayoutOrax.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Salary_N_Expensive</title>
+
+    <script src="~/Scripts/jsLibrary/chartLibrary.js"></script>
+    <style>
+        #chart-container {
+            width: 70%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content-wrapper">
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <div class="card card-outline card-danger">
+                            <div class="card-header">
+
+                                <div class="card-tools">
+                                    <button type="button" class="btn btn-tool" data-lte-toggle="card-maximize">
+                                        <i data-lte-icon="maximize" class="bi bi-fullscreen"></i>
+                                        <i data-lte-icon="minimize" class="bi bi-fullscreen-exit"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+
+                                <div id="revenue-chart"></div>
+
+                                <div class="col-md-12 col-sm-12 col-12">
+                                    <div class="info-box">
+                                        <div class="info-box-content">
+                                            <table>
+                                                <tr style="background-color:#ffd800" id="trForSalary"></tr>
+                                                <tr style="background-color:#99bbc6" id="trForExpense"></tr>
+                                                <tr style="background-color:#b16a73" id="trForPlus"></tr>
+                                                <tr style="background-color:#b16a73" id="trForminus"></tr>
+                                                <tr style="background-color:#99bbc6" id="trForMonth"></tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            let chartInstance; // Variable to store the chart instance
+            loadSalary_N_ExpensiveGraph();
+
+            function loadSalary_N_ExpensiveGraph() {
+                let columnChatHeader = '';
+
+                $.ajax({
+                    type: "POST",
+                    url: '/Orax/GetGraph_N_Expensive',
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (result) {
+                        debugger
+                        if (chartInstance) {
+                            chartInstance.destroy(); // Destroy the existing chart
+                        }
+
+                        let _lineXMonth = [];
+                        let _graphForSalary = [];
+                        let _graphForExpence = [];
+
+                        let _trForSalary = '<td>Salary</td>';
+                        let _trForExpense = '<td>Expense</td>';
+                        let _trForPlus = '<td>Plus</td>';
+                        let _trForMinus = '<td>Minus</td>';
+                        let _trForMonth = '<td>Month</td>';
+
+                        $.each(result.data, function (index, data) {
+                            _lineXMonth.push(data.month + data.remaining)
+                            _graphForSalary.push(data.salary);
+                            _graphForExpence.push(data.price);
+                            _trForSalary = _trForSalary + '<td>' + data.salary + '</td>';
+                            _trForExpense = _trForExpense + '<td>' + data.price + '</td>';
+                            _trForMonth = _trForMonth + '<td>' + data.month + ' ' + data.year + '</td>';
+
+                            if (parseFloat(data.remaining) > 0) {
+                                _trForPlus = _trForPlus + '<td>' + data.remaining + '</td>';
+                                _trForMinus = _trForMinus + '<td> </td>';
+                            }
+                            else {
+                                _trForPlus = _trForPlus + '<td> </td>';
+                                _trForMinus = _trForMinus + '<td>' + data.remaining + '</td>';
+                            }
+                        });
+
+                        //append
+                        $('#trForSalary').append(_trForSalary);
+                        $('#trForExpense').append(_trForExpense);
+                        $('#trForPlus').append(_trForPlus);
+                        $('#trForMinus').append(_trForMinus);
+                        $('#trForMonth').append(_trForMonth);
+
+
+                        const sales_chart_options = {
+                            series: [
+                              {
+                                  name: 'Month',
+                                  type: 'column', // for salary
+                                  data: _graphForSalary,
+                              },
+                               {
+                                   name: '/m Avg',
+                                   type: 'column', // for expence
+                                   data: _graphForExpence,
+                               }
+                            ],
+                            chart: {
+                                height: 390,
+                                type: 'line', // Use 'line' for mixed types
+                                toolbar: {
+                                    show: false,
+                                },
+                                parentHeightOffset: 0,
+                            },
+                            stroke: {
+                                curve: 'smooth',
+                                width: [1, 1],
+                            },
+                            plotOptions: {
+                                bar: {
+                                    columnWidth: '42%', // optional: thinner bars
+                                    borderRadius: 2,     // optional: rounded corners
+                                },
+                            },
+                            dataLabels: {
+                                enabled: true,
+                            },
+                            colors: ['#b55c64', '#87afbc'],
+                            xaxis: {
+                                type: 'string',
+                                categories: _lineXMonth,
+                            },
+                            yaxis: {
+                                min: 0,
+                                forceNiceScale: true,
+                            },
+                            tooltip: {
+                                x: {
+                                    format: 'MMMM yyyy',
+                                },
+                            },
+                            legend: {
+                                show: true,
+                            },
+                        };
+
+                        $('#revenue-chart').html(''); // Optional: clear container
+                        sales_chart = null;
+
+                        var sales_chart = new ApexCharts(document.querySelector('#revenue-chart'), sales_chart_options);
+
+                        sales_chart.render();
+
+                    },
+                    error: function (xhr) {
+                        alert('Error: ' + xhr.statusText);
+                    }
+                });
+            }
+
+
+
+
+        });
+    </script>
+
+
+    <!-- apexcharts -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.37.1/dist/apexcharts.min.js"
+            integrity="sha256-+vh8GkaU7C9/wbSLIcwq82tQ2wTf44aOHA8HlBMwRI8="
+            crossorigin="anonymous"></script>
+    <!-- ChartJS -->
+
+
+</body>
+</html>

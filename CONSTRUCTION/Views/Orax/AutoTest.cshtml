@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Product Search";
+    Layout = null;
+}
+
+<h2>Search Products</h2>
+<input type="text" id="productSearch" placeholder="Type product name..." class="form-control" />
+<br />
+<div id="selectedProduct"></div>
+
+<!-- jQuery + jQuery UI -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+<link href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" rel="stylesheet" />
+
+<script>
+    $(function () {
+        $("#productSearch").autocomplete({
+            source: '@Url.Action("SearchProducts", "Orax")',
+            minLength: 1, // start suggesting after 1 character
+            select: function (event, ui) {
+                $("#selectedProduct").html(
+                    `<strong>Id:</strong> ${ui.item.id} <br>
+                     <strong>Name:</strong> ${ui.item.label} <br>
+                     <strong>Price:</strong> $${ui.item.price}`);
+            }
+        });
+    });
+</script>

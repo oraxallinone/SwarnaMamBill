@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "FilterWithDetails";
+    Layout = "~/Views/Shared/_LayoutOrax.cshtml";
+}
+
+<link href="~/Content/application-css/entry3.css" rel="stylesheet" />
+
+<div class="content-wrapper">
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card card-info card-outline">
+                        <div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="form-group col-md-12">
+                                        <div class="row row-height-main">
+                                            <div class="form-group col-md-12">
+                                                <table class="col-md-12">
+                                                    <tr class="row">
+                                                        <td class="col-md-3"><input type="text" id="txtSearchDetails" class="form-control form-control-sm" /> </td>
+                                                        <td class="col-md-1"><input type="button" id="btnSearch" value="Search" class="btn btn-sm btn-primary width-100" /> </td>
+                                                        <td class="offset-1 col-md-3"> <input id="inputDetails" type="text" class="form-control form-control-sm" /></td>
+                                                        <td class="col-md-1"> <input type="button" id="btnSubmit" value="Update" class="btn btn-sm btn-secondary width-100" /> <input type="hidden" id="hidelIdHolder" /></td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <div class="col-md-12 div-body-main">
+                                                <table class="tbl-custome" id="tblExpensive" border="1"></table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script src="~/Scripts/application-js/filterWithDetails.js"></script>
+

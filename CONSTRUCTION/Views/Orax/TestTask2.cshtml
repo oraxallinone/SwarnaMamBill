@@ -1,0 +1,148 @@
+﻿
+@{
+    Layout = null;
+}
+
+@{
+    ViewBag.Title = "To-Do List";
+    Layout = null; // or use your default layout
+}
+@{
+    ViewBag.Title = "To-Do List";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>To-Do List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 30px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        input[type="text"], input[type="date"], select {
+            padding: 5px;
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 5px 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background: #f4f4f4;
+            margin: 5px 0;
+            padding: 10px;
+            border-left: 5px solid #007bff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .task-date {
+            font-size: 0.8em;
+            color: #555;
+        }
+
+        .done-btn {
+            cursor: pointer;
+            background: green;
+            color: white;
+            border: none;
+            padding: 5px 8px;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h2>My To-Do List</h2>
+
+    <input type="text" id="task" placeholder="Enter your task" />
+    <input type="date" id="taskDate" />
+    <button id="addBtn">Add Task</button>
+
+    <br /><br />
+
+    <label for="filter">Filter by Status: </label>
+    <select id="filter">
+        <option value="all">-- Select One --</option>
+        <option value="completed">Completed</option>
+        <option value="pending">Pending</option>
+    </select>
+
+    <ul id="todoList"></ul>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        var completedTasks = [];
+
+        function renderTask(taskText, taskDate, status) {
+            const li = $(`<li data-status="${status}">
+                <div>
+                    <strong>${taskText}</strong><br />
+                    <span class="task-date">${taskDate}</span>
+                </div>
+                <select id="filter">
+                 <option value="all">--Select One--</option>
+                 <option value="completed">Completed</option>
+                 <option value="pending">Pending</option>
+                </select>
+                <button class="done-btn">Done</button>
+            </li>`);
+            $('#todoList').append(li);
+        }
+
+        $('#addBtn').click(function () {
+            const task = $('#task').val();
+            const date = $('#taskDate').val();
+
+            if (task && date) {
+                renderTask(task, date, 'pending');
+                $('#task').val('');
+                $('#taskDate').val('');
+            } else {
+                alert("Please enter both task and date.");
+            }
+        });
+
+        $('#todoList').on('click', '.done-btn', function () {
+            const li = $(this).closest('li');
+            const taskText = li.find('strong').text();
+            const taskDate = li.find('.task-date').text();
+            completedTasks.push({ task: taskText, date: taskDate });
+            localStorage.setItem('completedTasks', JSON.stringify(completedTasks));
+            li.remove();
+        });
+
+        $('#filter').change(function () {
+            const filter = $(this).val();
+            $('#todoList li').each(function () {
+                const status = $(this).attr('data-status');
+                if (filter === 'all') {
+                    $(this).show();
+                } else if (filter === status) {
+                    $(this).show();
+                } else {
+                    $(this).hide();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
+

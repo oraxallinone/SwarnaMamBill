@@ -1,0 +1,258 @@
+﻿
+@{
+    ViewBag.Title = "CalenderWise";
+    Layout = "~/Views/Shared/_LayoutOrax.cshtml";
+}
+<link href="~/Content/application-css/calender-css.css" rel="stylesheet" />
+
+<div class="content-wrapper">
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+
+
+
+                <div class="col-md-12">
+                    <div class="card card-outline card-danger">
+                        <div class="card-header">
+
+                            <table>
+                                <tr>
+                                    <td><select id="ddlYear" class="form-control form-control-sm month-width"><option value="0">---</option> <option value="2024">24</option> <option selected="selected" value="2025">25</option>  </select> </td>
+                                    <td><select id="ddlMonth" class="form-control form-control-sm month-width"><option>-- select --</option> <option value="all">all</option> <option value="1">January</option> <option value="2">February</option> <option value="3">March</option> <option value="4">April</option> <option value="5">May</option>  <option value="6">June</option> <option value="7">July</option>  <option value="8">August</option><option value="9">September</option> <option value="10">October</option> <option value="11">November</option> <option value="12">December</option>  </select>  </td>
+                                    <td> ||| </td>
+                                    <td>
+                                        <select id="ddlGroup1" class="form-control form-control-sm month-width"> <option value="">-- select one --</option> <option value="need">Need</option> <option value="want">Want</option> <option value="save">Save</option>  </select>
+                                    </td>
+                                    <td>
+                                        <select id="ddlGroup2" class="form-control form-control-sm month-width"></select>
+                                    </td>
+                                    <td>
+                                        <select id="ddlGroup3" class="form-control form-control-sm month-width"> <option value="">-- select one --</option> <option value="repeat">Repeat</option><option value="carOil">Car Oil</option> <option value="bikeOil">Bike Oil</option> <option value="LIC">LIC</option><option value="stock">stock</option>  </select>
+                                    </td>
+                                </tr>
+                            </table>
+
+
+                            <div class="card-tools">
+                                <button type="button" class="btn btn-tool" data-lte-toggle="card-maximize">
+                                    <i data-lte-icon="maximize" class="bi bi-fullscreen"></i>
+                                    <i data-lte-icon="minimize" class="bi bi-fullscreen-exit"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+
+
+                            <div class="calendar-wrapper">
+                                <div class="calendar-container">
+                                    <div class="calendar-header" id="prev-calendar-title"></div>
+                                    <div class="calendar" id="prev-calendar"></div>
+                                </div>
+
+                                <div class="calendar-container">
+                                    <div class="calendar-header" id="curr-calendar-title"></div>
+                                    <div class="calendar" id="curr-calendar"></div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script>
+
+    $(document).ready(function () {
+        getAllGroups();
+
+        let spendingData = [];
+
+        const monthNames = [
+            'January', 'February', 'March', 'April', 'May', 'June',
+            'July', 'August', 'September', 'October', 'November', 'December'
+        ];
+
+        function generateCalendar(month, year, calendarId, titleId) {
+            const calendar = $(`#${calendarId}`);
+            const title = $(`#${titleId}`);
+            calendar.empty();
+
+            title.text(`${monthNames[month]} ${year}`);
+
+            const daysOfWeek = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun' ];
+            const firstDay = new Date(year, month, 1).getDay();
+            const lastDate = new Date(year, month + 1, 0).getDate();
+
+            // Day headers
+            for (let d of daysOfWeek) {
+                calendar.append(`<div class='day-head header'>${d}</div>`);
+            }
+
+            // Blank slots before first day
+            for (let i = 0; i < firstDay; i++) {
+                calendar.append(`<div class='day'></div>`);
+            }
+
+            
+
+            // Days with spending
+            for (let day = 1; day <= lastDate; day++) {
+                const fullDate = `${year}-${(month + 1).toString().padStart(2, '0')}-${day.toString().padStart(2, '0')}`;
+                debugger
+                const spend = spendingData.find(s => s.date == fullDate);
+                const highlightClass = spend ? 'highlight' : '';
+                const spendingHtml = spend ? `<div class='spending'>₹${spend.amount}</div>` : '';
+
+                calendar.append(`
+                <div class='day ${highlightClass}'>
+                    ${day}
+                    ${spendingHtml}
+                </div>
+            `);
+            }
+        }
+
+
+
+
+
+        $('#ddlGroup1').change(function () {
+            $("#ddlGroup2  option:first").prop("selected", "selected");
+            $("#ddlGroup3  option:first").prop("selected", "selected");
+            getList();
+        });
+
+        $(document).on('change', '#ddlGroup2', function () {
+            $("#ddlGroup1  option:first").prop("selected", "selected");
+            $("#ddlGroup3  option:first").prop("selected", "selected");
+            getList();
+        });
+
+        $('#ddlGroup3').change(function () {
+            $("#ddlGroup1  option:first").prop("selected", "selected");
+            $("#ddlGroup2  option:first").prop("selected", "selected");
+            getList();
+        });
+        $('#ddlMonth').change(function () {
+            getList();
+        });
+        $('#ddlYear').change(function () {
+            getList();
+        });
+
+
+        //#get monthwise dates
+        function getList() {
+
+            $('.spending').remove();           // Remove ₹amount display
+            $('.highlight').removeClass('highlight'); // Remove color highlights
+
+
+
+            let forYear = $('select#ddlYear option:selected').val();
+            let forMonth = $('select#ddlMonth option:selected').val();
+            let forGroup1 = $('select#ddlGroup1 option:selected').val();
+            let forGroup2 = $('select#ddlGroup2 option:selected').text();
+            let forGroup3 = $('select#ddlGroup3 option:selected').val();
+
+            if (forYear == 0 || forMonth == "-- select --") {
+                return false;
+            }
+
+            if (forGroup1 == "" && forGroup2 == "-- select one --" && forGroup3 == "")
+            {
+                return false;
+            }
+
+            if (forGroup2 == "-- select one --") { forGroup2 = "" }
+
+            if (forGroup2 != "" && forGroup1 != "" && forGroup3 != "") {
+                $("#tblExpensive").empty();
+                return;
+            }
+            if (forMonth == "-- select --") {
+                $("#tblExpensive").empty();
+                return;
+            }
+            let GetExpensiveViewModel = {
+                forYear: forYear,
+                forMonth: forMonth,
+                group1: forGroup1,//20 30 50
+                group2: forGroup2,// 1.5k
+                group3: forGroup3//sip
+            }
+            $.ajax({
+                type: "POST",
+                url: '/Orax/GetDataForCalender',
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify(GetExpensiveViewModel),
+                success: function (result) {
+                    //monthMaster monthTransList  toDate
+
+                    debugger
+
+                    //Main calender function execute form here
+                    const today = new Date(result.calenderDate[0].toDate);//last day of this month
+                    const currMonth = today.getMonth();
+                    const currYear = today.getFullYear();
+
+                    const prevMonth = currMonth === 0 ? 11 : currMonth - 1;
+                    const prevYear = currMonth === 0 ? currYear - 1 : currYear;
+
+
+                    function stripTime(dateTimeStr) {
+                        return dateTimeStr.split(" ")[0];
+                    }
+
+                    //monthMaster
+                    spendingData = [];
+                    $.each(result.calenderData, function (index, data) {
+                        let tempObj = { date: stripTime(data.date), amount: data.spending };
+                        spendingData.push(tempObj);
+                    });
+
+
+
+                    generateCalendar(prevMonth, prevYear, 'prev-calendar', 'prev-calendar-title');
+                    generateCalendar(currMonth, currYear, 'curr-calendar', 'curr-calendar-title');
+
+                },
+                error: function (xhr) {
+                    alert('Error: ' + xhr.statusText);
+                }
+            });
+        }
+
+        //#load group2 ddl#
+        function getAllGroups() {
+            $.ajax({
+                url: '/Orax/GetDDLGroup2All',
+                type: "POST",
+                dataType: "json",
+                contentType: 'application/json',
+                success: function (data) {
+                    $('#ddlGroup2').empty();
+                    $('#ddlGroup2').append($("<option></option>").attr("value", "0").text("-- select one --"));
+
+                    $.each(data, function (key, value) {
+                        $('#ddlGroup2').append($("<option></option>").attr("value", value.group2int).text(value.groupName));
+                    });
+                },
+                error: function (xhr) {
+                    alert('Error: ' + xhr.statusText);
+                }
+            });
+        }
+
+    });
+
+
+
+
+</script>

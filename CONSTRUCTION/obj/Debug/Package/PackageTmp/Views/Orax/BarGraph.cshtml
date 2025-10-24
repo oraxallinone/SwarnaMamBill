@@ -1,0 +1,302 @@
+﻿
+@{
+    ViewBag.Title = "Bar Graph";
+    Layout = "~/Views/Shared/_LayoutOrax.cshtml"; //null; //
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Graph chart.js</title>
+
+    @*<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>*@
+    @*<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>*@
+    <script src="~/Scripts/jsLibrary/chartLibrary.js"></script>
+    <style>
+        #chart-container {
+            width: 70%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content-wrapper">
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+
+
+
+                    <div class="col-md-12">
+                        <div class="card card-outline card-danger">
+                            <div class="card-header">
+
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <select id="ddlGroup1" > <option value="">-- select one --</option> <option value="need">Need</option> <option value="want">Want</option> <option value="save">Save</option>  </select>
+                                        </td>
+                                        <td>
+                                            <select id="ddlGroup2" ></select>
+                                        </td>
+                                        <td>
+                                            <select id="ddlGroup3" > <option value="">-- select one --</option> <option value="repeat">Repeat</option><option value="carOil">Car Oil</option> <option value="bikeOil">Bike Oil</option> <option value="LIC">LIC</option><option value="stock">stock</option>  </select>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <div class="card-tools">
+                                    <button type="button" class="btn btn-tool" data-lte-toggle="card-maximize">
+                                        <i data-lte-icon="maximize" class="bi bi-fullscreen"></i>
+                                        <i data-lte-icon="minimize" class="bi bi-fullscreen-exit"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                               
+
+                                <div id="revenue-chart"></div>
+                                 <div class="col-md-12 col-sm-12 col-12">
+                                    <div class="info-box">
+                                        <div class="info-box-content">
+                                            <table>
+                                                <tr style="background-color:#99bbc6" id="trForTdAvrage"> </tr>
+                                                <tr style="background-color:#b16a7370" id="trFor_Month"> </tr>
+                                                <tr style="background-color:#b16a7370" id="trForTdSpeand"> </tr>
+                                                <tr style="background-color:#99bbc6" id="trForTdTotal"> </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            let chartInstance; // Variable to store the chart instance
+
+            getAllGroups();
+            function getAllGroups() {
+                $.ajax({
+                    url: '/Orax/GetDDLGroup2All',
+                    type: "POST",
+                    dataType: "json",
+                    contentType: 'application/json',
+                    success: function (data) {
+                        $('#ddlGroup2').empty();
+                        $('#ddlGroup2').append($("<option></option>").attr("value", "0").text("-- select one --"));
+
+                        $.each(data, function (key, value) {
+                            $('#ddlGroup2').append($("<option></option>").attr("value", value.group2int).text(value.groupName));
+                        });
+                    },
+                    error: function (xhr) {
+                        alert('Error: ' + xhr.statusText);
+                    }
+                });
+            }
+
+
+            $('#ddlGroup1').change(function () {
+                $("#ddlGroup2  option:first").prop("selected", "selected");
+                $("#ddlGroup3  option:first").prop("selected", "selected");
+                loadColumnGraph();
+            });
+
+            $('#ddlGroup2').change(function () {
+                $("#ddlGroup1  option:first").prop("selected", "selected");
+                $("#ddlGroup3  option:first").prop("selected", "selected");
+                loadColumnGraph();
+            });
+
+            $('#ddlGroup3').change(function () {
+                $("#ddlGroup1  option:first").prop("selected", "selected");
+                $("#ddlGroup2  option:first").prop("selected", "selected");
+                loadColumnGraph();
+            });
+
+            function loadColumnGraph() {
+                let columnChatHeader = '';
+
+                let forGroup1 = $('select#ddlGroup1 option:selected').val();
+                let forGroup2 = $('select#ddlGroup2 option:selected').text();
+                let forGroup3 = $('select#ddlGroup3 option:selected').val();
+                if (forGroup2 == "-- select one --") { forGroup2 = "" }
+
+                if (forGroup2 != "" && forGroup1 != "" && forGroup3 != "") { return; }
+
+                if (forGroup1 != "") { columnChatHeader = forGroup1 }
+                if (forGroup2 != "") { columnChatHeader = forGroup2 }
+                if (forGroup3 != "") { columnChatHeader = forGroup3 }
+
+                let data = {
+                    forMonth: '',//
+                    group1: forGroup1,//20 30 50
+                    group2: forGroup2,// 1.5k
+                    group3: forGroup3//sip
+                }
+
+
+                $.ajax({
+                    type: "POST",
+                    url: '/Orax/GetColumnChart',
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    data: JSON.stringify(data),
+                    success: function (result) {
+                        debugger
+                        if (chartInstance) {
+                            chartInstance.destroy(); // Destroy the existing chart
+                        }
+                        //clear
+                        $('#trFor_Month').empty();
+                        $('#trForTdSpeand').empty();
+                        $('#trForTdTotal').empty();
+                        $('#trForTdAvrage').empty();
+                        //clear
+
+                        let _graphPerMonth = [];
+                        let _graphAvgPerMonth = [];
+                        let _graphAvgAllMonth = [];
+                        let _lineX = [];
+
+
+                        let _tdForTdMonth = '<td>Month</td>'
+                        let _tdForTdSpeand = '<td>Speand</td>'
+                        let _trForTdTotal = '<td>Total</td>'
+                        let _total = 0;
+                        let _trForTdAvrage = '<td>Avrage</td>'
+
+
+                        $.each(result.barGraphData, function (index, data) {
+                            _lineX.push(data.label.split('-')[0]);
+                            _graphPerMonth.push(data.y);
+
+
+                            _tdForTdMonth = _tdForTdMonth + '<td>' + data.label.split('-')[0] + '</td>';
+                            _tdForTdSpeand = _tdForTdSpeand + '<td>' + data.y + '</td>';
+                            _total = parseInt(_total) + parseInt(data.y);
+                            _trForTdTotal = _trForTdTotal + '<td>' + _total + '</td>';
+                            var crntAvg = parseInt(_total / (parseInt(index) + 1));
+                            _trForTdAvrage = _trForTdAvrage + '<td>  <u>' + crntAvg + '</u> </td>';
+
+
+                            //crnt avg wave line
+                            _graphAvgPerMonth.push(crntAvg.toFixed(0));
+                           
+                        });
+                        //all tatal avg _total
+                        //_graphAvgAllMonth
+                        let ___alltotalAvg = _total / parseInt(result.barGraphData.length);
+                        $.each(result.barGraphData, function (index, data) {
+                            _graphAvgAllMonth.push(___alltotalAvg.toFixed(0));
+                        });
+
+
+
+                        $('#trFor_Month').append(_tdForTdMonth);
+                        $('#trForTdSpeand').append(_tdForTdSpeand);
+                        $('#trForTdTotal').append(_trForTdTotal);
+                        $('#trForTdAvrage').append(_trForTdAvrage);
+                        //aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+                        const sales_chart_options = {
+                            series: [
+                              {
+                                  name: 'Month',
+                                  type: 'column', // Column chart
+                                  data: _graphPerMonth,
+                              },
+                               {
+                                   name: '/m Avg',
+                                   type: 'area', // Area chart
+                                   data: _graphAvgPerMonth,
+                               },
+                              {
+                                  name: 'Crnt Avg',
+                                  type: 'line', // line hart
+                                  data: _graphAvgAllMonth,
+                              },
+                            ],
+                            chart: {
+                                height: 390,
+                                type: 'line', // Use 'line' for mixed types
+                                toolbar: {
+                                    show: false,
+                                },
+                                parentHeightOffset: 0,
+                            },
+                            stroke: {
+                                curve: 'smooth',
+                                width: [1, 1],
+                            },
+                            plotOptions: {
+                                bar: {
+                                    columnWidth: '42%', // optional: thinner bars
+                                    borderRadius: 2,     // optional: rounded corners
+                                },
+                            },
+                            dataLabels: {
+                                enabled: true,
+                            },
+                            colors: ['#b55c64', '#87afbc', '#21130d'],
+                            xaxis: {
+                                type: 'string',
+                                categories: _lineX,
+                            },
+                            yaxis: {
+                                min: 0,
+                                forceNiceScale: true,
+                            },
+                            tooltip: {
+                                x: {
+                                    format: 'MMMM yyyy',
+                                },
+                            },
+                            legend: {
+                                show: true,
+                            },
+                        };
+
+                        debugger
+                        $('#revenue-chart').html(''); // Optional: clear container
+                        sales_chart = null;
+
+                        var sales_chart = new ApexCharts(document.querySelector('#revenue-chart'), sales_chart_options);
+                        
+                        sales_chart.render();
+
+                    },
+                    error: function (xhr) {
+                        alert('Error: ' + xhr.statusText);
+                    }
+                });
+            }
+
+
+
+
+        });
+    </script>
+
+
+    <!-- apexcharts -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.37.1/dist/apexcharts.min.js"
+            integrity="sha256-+vh8GkaU7C9/wbSLIcwq82tQ2wTf44aOHA8HlBMwRI8="
+            crossorigin="anonymous"></script>
+    <!-- ChartJS -->
+
+     
+</body>
+</html>

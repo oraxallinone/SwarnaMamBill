@@ -1,0 +1,327 @@
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\ApplicationInsights.config
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\roslyn\csc.exe
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\roslyn\System.Collections.Immutable.dll
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\roslyn\System.Reflection.Metadata.dll
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\roslyn\vbc.exe
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\roslyn\VBCSCompiler.exe
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\roslyn\VBCSCompiler.exe.config
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\CONSTRUCTION.dll.config
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\CONSTRUCTION.dll
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\CONSTRUCTION.pdb
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Antlr3.Runtime.dll
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\EntityFramework.dll
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\EntityFramework.SqlServer.dll
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.AI.Agent.Intercept.dll
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.AI.DependencyCollector.dll
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.AI.Web.dll
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.AI.WindowsServer.dll
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.ApplicationInsights.dll
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.AspNet.Identity.Core.dll
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.Owin.dll
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.Owin.Security.Cookies.dll
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.Owin.Security.dll
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.Owin.Security.Facebook.dll
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.Owin.Security.Google.dll
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.Owin.Security.OAuth.dll
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.Owin.Security.Twitter.dll
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.Web.Infrastructure.dll
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Newtonsoft.Json.dll
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Owin.dll
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\System.Web.Helpers.dll
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\System.Web.Mvc.dll
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\System.Web.Optimization.dll
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\System.Web.Razor.dll
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\System.Web.WebPages.Deployment.dll
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\System.Web.WebPages.dll
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\System.Web.WebPages.Razor.dll
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\WebGrease.dll
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.AI.DependencyCollector.xml
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.AI.Web.xml
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.AI.WindowsServer.xml
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.ApplicationInsights.xml
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\System.Web.Helpers.xml
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\System.Web.Mvc.xml
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\System.Web.Optimization.xml
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\System.Web.Razor.xml
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\System.Web.WebPages.xml
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\System.Web.WebPages.Deployment.xml
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\System.Web.WebPages.Razor.xml
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Antlr3.Runtime.pdb
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Newtonsoft.Json.xml
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\EntityFramework.xml
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\EntityFramework.SqlServer.xml
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.AspNet.Identity.Core.xml
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.Owin.xml
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.Owin.Security.xml
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.Owin.Security.Facebook.xml
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.Owin.Security.Cookies.xml
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.Owin.Security.OAuth.xml
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.Owin.Security.Google.xml
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.Owin.Security.Twitter.xml
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\obj\Release\CONSTRUCTION.dll
+D:\SOFTWARE\SwarnaMam1\15\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\obj\Release\CONSTRUCTION.pdb
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\ApplicationInsights.config
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\roslyn\csc.exe
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\roslyn\System.Collections.Immutable.dll
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\roslyn\System.Reflection.Metadata.dll
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\roslyn\vbc.exe
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\roslyn\VBCSCompiler.exe
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\roslyn\VBCSCompiler.exe.config
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\CONSTRUCTION.dll.config
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\CONSTRUCTION.dll
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\CONSTRUCTION.pdb
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\obj\Release\CONSTRUCTION.dll
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\obj\Release\CONSTRUCTION.pdb
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\obj\Release\CONSTRUCTION.csprojResolveAssemblyReference.cache
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Antlr3.Runtime.dll
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\EntityFramework.dll
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\EntityFramework.SqlServer.dll
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.AI.Agent.Intercept.dll
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.AI.DependencyCollector.dll
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.AI.Web.dll
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.AI.WindowsServer.dll
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.ApplicationInsights.dll
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.AspNet.Identity.Core.dll
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.Owin.dll
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.Owin.Security.Cookies.dll
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.Owin.Security.dll
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.Owin.Security.Facebook.dll
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.Owin.Security.Google.dll
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.Owin.Security.OAuth.dll
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.Owin.Security.Twitter.dll
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.Web.Infrastructure.dll
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Newtonsoft.Json.dll
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Owin.dll
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\System.Web.Helpers.dll
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\System.Web.Mvc.dll
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\System.Web.Optimization.dll
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\System.Web.Razor.dll
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\System.Web.WebPages.Deployment.dll
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\System.Web.WebPages.dll
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\System.Web.WebPages.Razor.dll
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\WebGrease.dll
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.AI.DependencyCollector.xml
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.AI.Web.xml
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.AI.WindowsServer.xml
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.ApplicationInsights.xml
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\System.Web.Helpers.xml
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\System.Web.Mvc.xml
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\System.Web.Optimization.xml
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\System.Web.Razor.xml
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\System.Web.WebPages.xml
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\System.Web.WebPages.Deployment.xml
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\System.Web.WebPages.Razor.xml
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Antlr3.Runtime.pdb
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Newtonsoft.Json.xml
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\EntityFramework.xml
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\EntityFramework.SqlServer.xml
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.AspNet.Identity.Core.xml
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.Owin.xml
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.Owin.Security.xml
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.Owin.Security.Facebook.xml
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.Owin.Security.Cookies.xml
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.Owin.Security.OAuth.xml
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.Owin.Security.Google.xml
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.Owin.Security.Twitter.xml
+D:\SOFTWARE\SwarnaMam1\15-construction\CONSTRUCTION\CONSTRUCTION\CONSTRUCTION\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\ApplicationInsights.config
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\roslyn\csc.exe
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\roslyn\System.Collections.Immutable.dll
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\roslyn\System.Reflection.Metadata.dll
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\roslyn\vbc.exe
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\roslyn\VBCSCompiler.exe
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\roslyn\VBCSCompiler.exe.config
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\CONSTRUCTION.dll.config
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\CONSTRUCTION.dll
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\CONSTRUCTION.pdb
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Antlr3.Runtime.dll
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\EntityFramework.dll
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\EntityFramework.SqlServer.dll
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Microsoft.AI.Agent.Intercept.dll
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Microsoft.AI.DependencyCollector.dll
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Microsoft.AI.Web.dll
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Microsoft.AI.WindowsServer.dll
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Microsoft.ApplicationInsights.dll
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Microsoft.AspNet.Identity.Core.dll
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Microsoft.Owin.dll
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Microsoft.Owin.Security.Cookies.dll
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Microsoft.Owin.Security.dll
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Microsoft.Owin.Security.Facebook.dll
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Microsoft.Owin.Security.Google.dll
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Microsoft.Owin.Security.OAuth.dll
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Microsoft.Owin.Security.Twitter.dll
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Microsoft.Web.Infrastructure.dll
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Newtonsoft.Json.dll
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Owin.dll
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\System.Web.Helpers.dll
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\System.Web.Mvc.dll
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\System.Web.Optimization.dll
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\System.Web.Razor.dll
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\System.Web.WebPages.Deployment.dll
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\System.Web.WebPages.dll
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\System.Web.WebPages.Razor.dll
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\WebGrease.dll
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Microsoft.AI.DependencyCollector.xml
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Microsoft.AI.Web.xml
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Microsoft.AI.WindowsServer.xml
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Microsoft.ApplicationInsights.xml
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\System.Web.Helpers.xml
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\System.Web.Mvc.xml
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\System.Web.Optimization.xml
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\System.Web.Razor.xml
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\System.Web.WebPages.xml
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\System.Web.WebPages.Deployment.xml
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\System.Web.WebPages.Razor.xml
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Antlr3.Runtime.pdb
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Newtonsoft.Json.xml
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\EntityFramework.xml
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\EntityFramework.SqlServer.xml
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Microsoft.AspNet.Identity.Core.xml
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Microsoft.Owin.xml
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Microsoft.Owin.Security.xml
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Microsoft.Owin.Security.Facebook.xml
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Microsoft.Owin.Security.Cookies.xml
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Microsoft.Owin.Security.OAuth.xml
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Microsoft.Owin.Security.Google.xml
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Microsoft.Owin.Security.Twitter.xml
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\obj\Release\CONSTRUCTION.csprojResolveAssemblyReference.cache
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\obj\Release\CONSTRUCTION.dll
+D:\SOFTWARE\BudgetProject\CONSTRUCTION\obj\Release\CONSTRUCTION.pdb
+D:\sync with git hub\budget\CONSTRUCTION\bin\ApplicationInsights.config
+D:\sync with git hub\budget\CONSTRUCTION\bin\roslyn\csc.exe
+D:\sync with git hub\budget\CONSTRUCTION\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\sync with git hub\budget\CONSTRUCTION\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\sync with git hub\budget\CONSTRUCTION\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\sync with git hub\budget\CONSTRUCTION\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\sync with git hub\budget\CONSTRUCTION\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\sync with git hub\budget\CONSTRUCTION\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\sync with git hub\budget\CONSTRUCTION\bin\roslyn\System.Collections.Immutable.dll
+D:\sync with git hub\budget\CONSTRUCTION\bin\roslyn\System.Reflection.Metadata.dll
+D:\sync with git hub\budget\CONSTRUCTION\bin\roslyn\vbc.exe
+D:\sync with git hub\budget\CONSTRUCTION\bin\roslyn\VBCSCompiler.exe
+D:\sync with git hub\budget\CONSTRUCTION\bin\roslyn\VBCSCompiler.exe.config
+D:\sync with git hub\budget\CONSTRUCTION\bin\CONSTRUCTION.dll.config
+D:\sync with git hub\budget\CONSTRUCTION\bin\CONSTRUCTION.dll
+D:\sync with git hub\budget\CONSTRUCTION\bin\CONSTRUCTION.pdb
+D:\sync with git hub\budget\CONSTRUCTION\bin\Antlr3.Runtime.dll
+D:\sync with git hub\budget\CONSTRUCTION\bin\EntityFramework.dll
+D:\sync with git hub\budget\CONSTRUCTION\bin\EntityFramework.SqlServer.dll
+D:\sync with git hub\budget\CONSTRUCTION\bin\Microsoft.AI.Agent.Intercept.dll
+D:\sync with git hub\budget\CONSTRUCTION\bin\Microsoft.AI.DependencyCollector.dll
+D:\sync with git hub\budget\CONSTRUCTION\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\sync with git hub\budget\CONSTRUCTION\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\sync with git hub\budget\CONSTRUCTION\bin\Microsoft.AI.Web.dll
+D:\sync with git hub\budget\CONSTRUCTION\bin\Microsoft.AI.WindowsServer.dll
+D:\sync with git hub\budget\CONSTRUCTION\bin\Microsoft.ApplicationInsights.dll
+D:\sync with git hub\budget\CONSTRUCTION\bin\Microsoft.AspNet.Identity.Core.dll
+D:\sync with git hub\budget\CONSTRUCTION\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\sync with git hub\budget\CONSTRUCTION\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\sync with git hub\budget\CONSTRUCTION\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\sync with git hub\budget\CONSTRUCTION\bin\Microsoft.Owin.dll
+D:\sync with git hub\budget\CONSTRUCTION\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\sync with git hub\budget\CONSTRUCTION\bin\Microsoft.Owin.Security.Cookies.dll
+D:\sync with git hub\budget\CONSTRUCTION\bin\Microsoft.Owin.Security.dll
+D:\sync with git hub\budget\CONSTRUCTION\bin\Microsoft.Owin.Security.Facebook.dll
+D:\sync with git hub\budget\CONSTRUCTION\bin\Microsoft.Owin.Security.Google.dll
+D:\sync with git hub\budget\CONSTRUCTION\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\sync with git hub\budget\CONSTRUCTION\bin\Microsoft.Owin.Security.OAuth.dll
+D:\sync with git hub\budget\CONSTRUCTION\bin\Microsoft.Owin.Security.Twitter.dll
+D:\sync with git hub\budget\CONSTRUCTION\bin\Microsoft.Web.Infrastructure.dll
+D:\sync with git hub\budget\CONSTRUCTION\bin\Newtonsoft.Json.dll
+D:\sync with git hub\budget\CONSTRUCTION\bin\Owin.dll
+D:\sync with git hub\budget\CONSTRUCTION\bin\System.Web.Helpers.dll
+D:\sync with git hub\budget\CONSTRUCTION\bin\System.Web.Mvc.dll
+D:\sync with git hub\budget\CONSTRUCTION\bin\System.Web.Optimization.dll
+D:\sync with git hub\budget\CONSTRUCTION\bin\System.Web.Razor.dll
+D:\sync with git hub\budget\CONSTRUCTION\bin\System.Web.WebPages.Deployment.dll
+D:\sync with git hub\budget\CONSTRUCTION\bin\System.Web.WebPages.dll
+D:\sync with git hub\budget\CONSTRUCTION\bin\System.Web.WebPages.Razor.dll
+D:\sync with git hub\budget\CONSTRUCTION\bin\WebGrease.dll
+D:\sync with git hub\budget\CONSTRUCTION\bin\Microsoft.AI.DependencyCollector.xml
+D:\sync with git hub\budget\CONSTRUCTION\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\sync with git hub\budget\CONSTRUCTION\bin\Microsoft.AI.Web.xml
+D:\sync with git hub\budget\CONSTRUCTION\bin\Microsoft.AI.WindowsServer.xml
+D:\sync with git hub\budget\CONSTRUCTION\bin\Microsoft.ApplicationInsights.xml
+D:\sync with git hub\budget\CONSTRUCTION\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\sync with git hub\budget\CONSTRUCTION\bin\System.Web.Helpers.xml
+D:\sync with git hub\budget\CONSTRUCTION\bin\System.Web.Mvc.xml
+D:\sync with git hub\budget\CONSTRUCTION\bin\System.Web.Optimization.xml
+D:\sync with git hub\budget\CONSTRUCTION\bin\System.Web.Razor.xml
+D:\sync with git hub\budget\CONSTRUCTION\bin\System.Web.WebPages.xml
+D:\sync with git hub\budget\CONSTRUCTION\bin\System.Web.WebPages.Deployment.xml
+D:\sync with git hub\budget\CONSTRUCTION\bin\System.Web.WebPages.Razor.xml
+D:\sync with git hub\budget\CONSTRUCTION\bin\Antlr3.Runtime.pdb
+D:\sync with git hub\budget\CONSTRUCTION\bin\Newtonsoft.Json.xml
+D:\sync with git hub\budget\CONSTRUCTION\bin\EntityFramework.xml
+D:\sync with git hub\budget\CONSTRUCTION\bin\EntityFramework.SqlServer.xml
+D:\sync with git hub\budget\CONSTRUCTION\bin\Microsoft.AspNet.Identity.Core.xml
+D:\sync with git hub\budget\CONSTRUCTION\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\sync with git hub\budget\CONSTRUCTION\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\sync with git hub\budget\CONSTRUCTION\bin\Microsoft.Owin.xml
+D:\sync with git hub\budget\CONSTRUCTION\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\sync with git hub\budget\CONSTRUCTION\bin\Microsoft.Owin.Security.xml
+D:\sync with git hub\budget\CONSTRUCTION\bin\Microsoft.Owin.Security.Facebook.xml
+D:\sync with git hub\budget\CONSTRUCTION\bin\Microsoft.Owin.Security.Cookies.xml
+D:\sync with git hub\budget\CONSTRUCTION\bin\Microsoft.Owin.Security.OAuth.xml
+D:\sync with git hub\budget\CONSTRUCTION\bin\Microsoft.Owin.Security.Google.xml
+D:\sync with git hub\budget\CONSTRUCTION\bin\Microsoft.Owin.Security.Twitter.xml
+D:\sync with git hub\budget\CONSTRUCTION\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\sync with git hub\budget\CONSTRUCTION\obj\Release\CONSTRUCTION.csprojResolveAssemblyReference.cache
+D:\sync with git hub\budget\CONSTRUCTION\obj\Release\CONSTRUCTION.dll
+D:\sync with git hub\budget\CONSTRUCTION\obj\Release\CONSTRUCTION.pdb

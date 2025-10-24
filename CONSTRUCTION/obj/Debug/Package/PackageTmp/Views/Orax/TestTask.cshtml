@@ -1,0 +1,56 @@
+﻿
+@{
+    Layout = null;
+}
+
+@{
+    ViewBag.Title = "Completed Tasks";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Completed Tasks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 30px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background: #d4edda;
+            margin: 5px 0;
+            padding: 10px;
+            border-left: 5px solid #28a745;
+        }
+
+        .task-date {
+            font-size: 0.8em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h2>Completed Tasks</h2>
+    <ul id="completedList"></ul>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        const completed = JSON.parse(localStorage.getItem('completedTasks')) || [];
+        completed.forEach(item => {
+            $('#completedList').append(`<li><strong>${item.task}</strong><br /><span class="task-date">${item.date}</span></li>`);
+        });
+    </script>
+</body>
+</html>
+
