@@ -233,6 +233,14 @@
           <Property Name="type" Type="nvarchar" MaxLength="250" />
           <Property Name="branch" Type="nvarchar" MaxLength="250" />
         </EntityType>
+        <EntityType Name="tblTaskTracker">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TaskDetails" Type="nvarchar(max)" />
+          <Property Name="DueDate" Type="datetime" />
+        </EntityType>
         <EntityContainer Name="cbtsplco_ommsuppliersModelStoreContainer">
           <EntitySet Name="CounterMaster" EntityType="Self.CounterMaster" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="CustomerMaster" EntityType="Self.CustomerMaster" Schema="dbo" store:Type="Tables" />
@@ -248,6 +256,7 @@
           <EntitySet Name="tblReceiptDetails" EntityType="Self.tblReceiptDetails" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tblReceiptTransaction" EntityType="Self.tblReceiptTransaction" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tblTanent" EntityType="Self.tblTanent" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblTaskTracker" EntityType="Self.tblTaskTracker" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
@@ -268,6 +277,7 @@
           <EntitySet Name="tblReceiptDetails" EntityType="cbtsplco_ommsuppliersModel.tblReceiptDetail" />
           <EntitySet Name="tblReceiptTransactions" EntityType="cbtsplco_ommsuppliersModel.tblReceiptTransaction" />
           <EntitySet Name="tblTanents" EntityType="cbtsplco_ommsuppliersModel.tblTanent" />
+          <EntitySet Name="tblTaskTrackers" EntityType="cbtsplco_ommsuppliersModel.tblTaskTracker" />
         </EntityContainer>
         <EntityType Name="CounterMaster">
           <Key>
@@ -496,6 +506,14 @@
           <Property Name="ifsc" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
           <Property Name="type" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
           <Property Name="branch" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="tblTaskTracker">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TaskDetails" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DueDate" Type="DateTime" Precision="3" />
         </EntityType>
         </Schema>
     </edmx:ConceptualModels>
@@ -742,6 +760,15 @@
                 <ScalarProperty Name="tanentaddr1" ColumnName="tanentaddr1" />
                 <ScalarProperty Name="tanentName" ColumnName="tanentName" />
                 <ScalarProperty Name="tanentId" ColumnName="tanentId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblTaskTrackers">
+            <EntityTypeMapping TypeName="cbtsplco_ommsuppliersModel.tblTaskTracker">
+              <MappingFragment StoreEntitySet="tblTaskTracker">
+                <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+                <ScalarProperty Name="TaskDetails" ColumnName="TaskDetails" />
+                <ScalarProperty Name="id" ColumnName="id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

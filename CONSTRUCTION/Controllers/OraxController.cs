@@ -994,6 +994,92 @@ namespace CONSTRUCTION.Controllers
         }
         #endregion ------------------------------------
 
+
+        #region -----------------------TaskTracker CRUD Operations
+        public ActionResult TaskTracker()
+        {
+
+            return View();
+        }
+
+
+        [HttpGet]
+        public JsonResult GetTasks()
+        {
+            var res = db.tblTaskTrackers.ToList();
+            return Json(res, JsonRequestBehavior.AllowGet);
+        }
+
+        [HttpPost]
+        public JsonResult AddTask(tblTaskTracker data)
+        {
+            try
+            {
+                tblTaskTracker task = new tblTaskTracker
+                {
+                    TaskDetails = data.TaskDetails,
+                    DueDate = DateTime.Now,
+                };
+
+                db.tblTaskTrackers.Add(task);
+                db.SaveChanges();
+                return Json("success", JsonRequestBehavior.AllowGet);
+            }
+            catch (Exception ex)
+            {
+                return Json("error: " + ex.Message, JsonRequestBehavior.AllowGet);
+            }
+        }
+
+
+        [HttpPost]
+        public JsonResult UpdateTask(tblTaskTracker data)
+        {
+            try
+            {
+                var task = db.tblTaskTrackers.FirstOrDefault(x => x.id == data.id);
+                if (task != null)
+                {
+                    task.TaskDetails = data.TaskDetails;
+                    task.DueDate = DateTime.Now;
+                    db.SaveChanges();
+                    return Json("success", JsonRequestBehavior.AllowGet);
+                }
+                return Json("task not found", JsonRequestBehavior.AllowGet);
+            }
+            catch (Exception ex)
+            {
+                return Json("error: " + ex.Message, JsonRequestBehavior.AllowGet);
+            }
+        }
+
+
+        [HttpPost]
+        public JsonResult DeleteTask(int id)
+        {
+            try
+            {
+                var task = db.tblTaskTrackers.FirstOrDefault(x => x.id == id);
+                if (task != null)
+                {
+                    db.tblTaskTrackers.Remove(task);
+                    db.SaveChanges();
+                    return Json("success", JsonRequestBehavior.AllowGet);
+                }
+                return Json("task not found", JsonRequestBehavior.AllowGet);
+            }
+            catch (Exception ex)
+            {
+                return Json("error: " + ex.Message, JsonRequestBehavior.AllowGet);
+            }
+        }
+
+
+        #endregion
+
+
+
+
         public ActionResult TestTask()
         {
 

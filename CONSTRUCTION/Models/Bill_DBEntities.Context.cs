@@ -39,5 +39,6 @@ namespace CONSTRUCTION.Models
         public virtual DbSet<tblReceiptDetail> tblReceiptDetails { get; set; }
         public virtual DbSet<tblReceiptTransaction> tblReceiptTransactions { get; set; }
         public virtual DbSet<tblTanent> tblTanents { get; set; }
+        public virtual DbSet<tblTaskTracker> tblTaskTrackers { get; set; }
     }
 }
