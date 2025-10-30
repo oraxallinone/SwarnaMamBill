@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewBag.Title = "RepatEstimate";
+    Layout = "~/Views/Shared/_LayoutOrax.cshtml";
+}
+
+<style type="text/css">
+    #salaryList > tr:hover {
+        background-color: red;
+    }
+
+    tr:hover {
+        background-color: #bab7b7;
+    }
+</style>
+
+<div class="content-wrapper">
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card card-info card-outline">
+                        <div class="card-header">
+                            <h3 class="card-title">Salary List</h3>
+                        </div>
+                        <div>
+                            <div class="card-body">
+
+                                @{
+                                    if (ViewBag.GroupList != null)
+                                    {
+                                        <table class="table" id="salaryList">
+                                            <tr>
+                                                <th>
+                                                    GroupName
+                                                </th>
+                                                <th>
+                                                    fdfd
+                                                </th>
+
+                                                <th></th>
+                                            </tr>
+
+                                            @*@foreach (var item in Model)
+                                            {
+                                                <tr>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.year)
+                                                    </td>
+
+                                                    <td style="color:orangered">
+                                                        @Convert.ToString(string.Format("{0:dd/MM/yyyy}", item.salaryDate))
+                                                    </td>
+                                                    <td>
+                                                        @{
+                                                            if (item.month == "all")
+                                                            {
+                                                                continue;
+                                                            }
+                                                            @Html.ActionLink("Edit", "SalaryEdit", "Orax", new { id = item.id }, null)
+                                                        }
+                                                    </td>
+                                                </tr>
+                                            }*@
+                                        </table>
+                                  }
+                                }
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+

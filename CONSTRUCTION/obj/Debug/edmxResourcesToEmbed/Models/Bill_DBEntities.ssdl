@@ -228,6 +228,14 @@
     <Property Name="type" Type="nvarchar" MaxLength="250" />
     <Property Name="branch" Type="nvarchar" MaxLength="250" />
   </EntityType>
+  <EntityType Name="tblTaskTracker">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TaskDetails" Type="nvarchar(max)" />
+    <Property Name="DueDate" Type="datetime" />
+  </EntityType>
   <EntityContainer Name="cbtsplco_ommsuppliersModelStoreContainer">
     <EntitySet Name="CounterMaster" EntityType="Self.CounterMaster" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="CustomerMaster" EntityType="Self.CustomerMaster" Schema="dbo" store:Type="Tables" />
@@ -243,5 +251,6 @@
     <EntitySet Name="tblReceiptDetails" EntityType="Self.tblReceiptDetails" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tblReceiptTransaction" EntityType="Self.tblReceiptTransaction" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tblTanent" EntityType="Self.tblTanent" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblTaskTracker" EntityType="Self.tblTaskTracker" Schema="dbo" store:Type="Tables" />
   </EntityContainer>
 </Schema>

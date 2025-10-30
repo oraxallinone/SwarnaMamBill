@@ -1078,7 +1078,23 @@ namespace CONSTRUCTION.Controllers
         #endregion
 
 
+        #region ---------------------- repeat calculation --------------
+        public ActionResult RepatEstimate()
+        {
+            var groupList = db.tblBudgets
+               .GroupBy(x => new { x.group3, x.group2 })
+               .Select(g => new
+               {
+                   Group3 = g.Key.group3,
+                   Group2 = g.Key.group2
+               })
+               .ToList();
+            ViewBag.GroupList = groupList;
+            return View();
+        }
 
+
+        #endregion
 
         public ActionResult TestTask()
         {

@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "TaskTracker";
+    Layout = "~/Views/Shared/_LayoutOrax.cshtml";
+}
+
+
+<link href="~/Content/application-css/tasktracker.css" rel="stylesheet" />
+
+<div class="content-wrapper">
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card card-info card-outline">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="txtTaskDetails">Task Details</label>
+                                <input type="text" id="txtTaskDetails" class="form-control" placeholder="Enter task details" />
+                            </div>
+                            <div class="form-group">
+                                <label for="txtDatetoComplete">Date to Complete</label>
+                                <input type="date" id="txtDatetoComplete" class="form-control" />
+                            </div>
+                            <button id="btnSubmitTask" class="btn btn-primary">Submit Task</button>
+                            <hr />
+                            <h5>Task List</h5>
+                            <table class="table table-bordered" id="tblTasks">
+                                <thead>
+                                    <tr>
+                                        <th>Task Details</th>
+                                        <th>Date to Complete</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Task items will be appended here -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script src="~/Scripts/jquery.min.js"></script>
+<script src="~/Scripts/application-js/tasktracker.js"></script>
+

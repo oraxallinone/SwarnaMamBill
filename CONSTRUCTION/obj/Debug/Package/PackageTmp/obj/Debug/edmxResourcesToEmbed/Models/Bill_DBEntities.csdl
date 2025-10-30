@@ -15,6 +15,7 @@
     <EntitySet Name="tblReceiptDetails" EntityType="cbtsplco_ommsuppliersModel.tblReceiptDetail" />
     <EntitySet Name="tblReceiptTransactions" EntityType="cbtsplco_ommsuppliersModel.tblReceiptTransaction" />
     <EntitySet Name="tblTanents" EntityType="cbtsplco_ommsuppliersModel.tblTanent" />
+    <EntitySet Name="tblTaskTrackers" EntityType="cbtsplco_ommsuppliersModel.tblTaskTracker" />
   </EntityContainer>
   <EntityType Name="CounterMaster">
     <Key>
@@ -243,5 +244,13 @@
     <Property Name="ifsc" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
     <Property Name="type" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
     <Property Name="branch" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tblTaskTracker">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TaskDetails" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DueDate" Type="DateTime" Precision="3" />
   </EntityType>
 </Schema>
